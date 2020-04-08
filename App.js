@@ -14,10 +14,10 @@ export default class App extends React.Component {
   handleLoaded = () => this.setState({ loaded: true });
 
   loadAssets = async () => {
-    //throw new Error("im hungry");
-    await Font.loadAsync({
-      ...Ionicons.font,
-    });
+    // throw new Error("im hungry");
+    // await Font.loadAsync({
+    //   ...Ionicons.font,
+    // });
 
     // await this.loadAssets.loadAsync({
     //     require("")
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    // alignItems: "center",
+    // justifyContent: "center",
   },
 });
