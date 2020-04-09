@@ -4,6 +4,8 @@ import { AppLoading } from "expo";
 import * as Font from "expo-font";
 import { Ionicons } from "@expo/vector-icons";
 import TabNavigation from "./navigation/TabNavigation";
+import MainNavigation from "./navigation/MainNavigation";
+
 export default class App extends React.Component {
   state = {
     loaded: false,
@@ -18,7 +20,6 @@ export default class App extends React.Component {
     // await Font.loadAsync({
     //   ...Ionicons.font,
     // });
-
     // await this.loadAssets.loadAsync({
     //     require("")
     // });
@@ -29,7 +30,7 @@ export default class App extends React.Component {
     if (loaded) {
       return (
         <View style={styles.container}>
-          <TabNavigation></TabNavigation>
+          <MainNavigation></MainNavigation>
         </View>
       );
     } else {
@@ -47,7 +48,7 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "black",
     // alignItems: "center",
     // justifyContent: "center",
   },
