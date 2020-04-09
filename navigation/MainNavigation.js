@@ -7,7 +7,7 @@ const MainNavigation = createStackNavigator(
   {
     Tabs: {
       screen: TabNavigator,
-      navigationOptions: { title: "hello" },
+      navigationOptions: { header: null },
       DetailScreen,
     },
   },
