@@ -17,9 +17,9 @@ export default class App extends React.Component {
 
   loadAssets = async () => {
     // throw new Error("im hungry");
-    // await Font.loadAsync({
-    //   ...Ionicons.font,
-    // });
+    await Font.loadAsync({
+      ...Ionicons.font,
+    });
     // await this.loadAssets.loadAsync({
     //     require("")
     // });

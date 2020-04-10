@@ -8,8 +8,8 @@ const MainNavigation = createStackNavigator(
     Tabs: {
       screen: TabNavigator,
       navigationOptions: { header: null },
-      DetailScreen,
     },
+    Detail: DetailScreen,
   },
   {
     //initialRouteName : "DetailScreen"
